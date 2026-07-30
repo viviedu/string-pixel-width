@@ -1,6 +1,6 @@
 {
   "name": "string-pixel-width",
-  "version": "1.8.0-vivi2",
+  "version": "1.8.0-vivi4",
   "description": "String pixel width measurement on the backend in Javascript",
   "main": "lib/index.js",
   "scripts": {
