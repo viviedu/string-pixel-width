@@ -47,3 +47,9 @@ test('test non-existing font', () => {
 test('test printable, but unregistered character', () => {
   expect(index('‐')).toBe(50);
 });
+
+test('test full width chars', () => {
+  expect(index('会议室', { font: 'noto sans' })).toBe(300);
+  expect(index('あア가', { font: 'noto sans' })).toBe(300);
+  expect(index('会议室 A', { font: 'noto sans' })).toBe(390);
+});
